@@ -16,7 +16,7 @@ body {
     background: no-repeat url(images/mobile/image-header.jpg);
     background-color: hsl(197, 71%, 73%);
     background-size: 100% 100%;
-    padding: 150px 0;
+    padding-bottom: 150px;
 }
 
 .container {
@@ -27,8 +27,6 @@ body {
 }
 
 .header__top {
-    position: absolute;
-    top: 0;
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -66,18 +64,18 @@ body {
 .header__text--one {
     font-family: 'Barlow', sans-serif;
     font-size: .9rem;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .header__text--two {
     width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 2rem;
     text-transform: uppercase;
     letter-spacing: .5rem;
     text-align: center;
-    font-weight: 800;
-    font-size: 1.3rem;
+    font-weight: 900;
+    font-size: 1.2rem;
     font-family: 'Fraunces', sans-serif;
 }
 
@@ -88,7 +86,7 @@ body {
 
 .arrow svg {
     position: relative;
-    top: .8rem;
+    top: .9rem;
 }
 
 .nav__list {
@@ -97,3 +95,39 @@ body {
     margin: 0;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.image, img {
+    width: 100%;
+    flex: 1;
+}
+
+.column__words {
+    flex: 1;
+}
+.column__text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 80%;
+}
+
+.column__text--h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: .8rem;
+}
+
+.column__text h1 {
+    font-weight: 900;
+}
+
+.column__text--p {
+    color: hsl(210, 4%, 67%);
+    font-size: .9rem;
+    margin: 1rem 0;
+    line-height: 1.3rem;
+    font-weight: 200;
+}
