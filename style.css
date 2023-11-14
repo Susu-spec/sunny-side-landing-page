@@ -103,7 +103,7 @@ body {
 
 .image, img {
     width: 100%;
-    flex: 1;
+    display: block;
 }
 
 .column__words {
@@ -152,47 +152,125 @@ body {
     box-shadow: inset 0 -0.4em 0 0 hsl(51, 100%, 85%);
     color: black;
     border-radius: 5px;
-  }
+}
 
-  .red__span {
+.red__span {
     padding: 0 .9rem;
     box-shadow: inset 0 -0.4em 0 0 hsl(7, 100%, 90%);
     color: black;
     border-radius: 5px;
-  }
+}
 
-  .graphic__backdrop {
+.graphic__backdrop {
     position: relative;
     background: no-repeat url(images/mobile/image-graphic-design.jpg);
     background-color: hsl(167, 40%, 24%);
     background-size: 100% 100%;
  
-  }
+}
 
-   .backdrop__container {
+.backdrop__container {
     padding-top: 350px;
-  
-   }
+}
 
-   .backdrop__text {
+.backdrop__text {
      width: 100%;
-   }
+}
 
-   .graphic__design--text {
+.graphic__design--text {
     color: hsl(167, 40%, 24%);
-   }
+}
 
-   .backdrop--h1 {
+.backdrop--h1 {
     font-size: .9rem;
-   }
+}
 
-   .photography__backdrop {
+.photography__backdrop {
     position: relative;
     background: no-repeat url(images/mobile/image-photography.jpg);
     background-color: hsl(213, 9%, 39%);
     background-size: 100% 100%;
-   }
+}
 
-   .photography__text {
+.photography__text {
     color: hsl(198, 62%, 26%);
-   }
+}
+
+.client__info--h1 {
+    text-align: center;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bold;
+    font-size: .5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    padding-top: 4rem;
+    color: hsl(210, 4%, 67%);
+}
+
+.client__info {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.client__info--image {
+    margin-bottom: 1.5rem;
+}
+
+.client__info--image img {
+    max-width: 50%;
+    width: 70px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.client__info--p {
+    width: 90%;
+    margin: 0 auto;
+    color: hsl(212, 27%, 19%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.name__bold {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1rem;
+    margin: 2rem 0 0 0;
+    font-weight: 900;
+}
+
+.name__title {
+    color: hsl(232, 10%, 55%);
+    font-size: .7rem;
+}
+
+.row {
+    display: flex;
+}
+
+.footer__images {
+    display: grid;
+    grid-template-areas: "milk orng"
+                         "cone cubes";
+    grid-template-columns: 1fr 1fr;
+}
+
+.milkbottles {
+    grid-area: milk;
+}
+
+.orange {
+    grid-area: orng;
+}
+
+.cone {
+    grid-area: cone;
+    margin: 0;
+    padding: 0;
+}
+
+.cubes {
+    grid-area: cubes;
+    margin: 0;
+    padding: 0;
+}
+
