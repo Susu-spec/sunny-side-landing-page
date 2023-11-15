@@ -99,6 +99,7 @@ body {
 .column {
     display: flex;
     flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .image, img {
@@ -106,7 +107,7 @@ body {
     display: block;
 }
 
-.column__words {
+.column__words, .image {
     flex: 1;
 }
 .column__text {
@@ -243,8 +244,14 @@ body {
     font-size: .7rem;
 }
 
-.row {
+.footer__column {
     display: flex;
+    flex-direction: column;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: center;
 }
 
 .footer__images {
@@ -256,10 +263,14 @@ body {
 
 .milkbottles {
     grid-area: milk;
+    margin: 0;
+    padding: 0;
 }
 
 .orange {
     grid-area: orng;
+    margin: 0;
+    padding: 0;
 }
 
 .cone {
@@ -274,3 +285,91 @@ body {
     padding: 0;
 }
 
+.footer__container {
+    text-align: center;
+    background-color:  hsl(168, 50%, 55%);
+    color: hsl(167, 40%, 24%)
+}
+
+.footer__text {
+   padding: 1.5rem 0;
+   width: 100%;
+   max-width: 375px;
+}
+
+.footer__col--list {
+    margin: 2rem auto;
+}
+
+.footer__list {
+    margin: 0 auto;
+    padding: 1rem 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 4rem;
+}
+
+.footer__icons {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .header {
+        background: no-repeat url(images/desktop/image-header.jpg);
+        background-size: 100% 100%;
+    }
+    .column, .image__column {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .reverse {
+        flex-direction: row-reverse;
+    }
+    .column__text {
+        text-align: left;
+        width: 70%;
+    }
+    .column__words {
+        width: 100%;
+        align-self: center;
+    }
+    .graphic__backdrop, .photography__backdrop {
+        flex: 1;
+    }
+    .graphic__backdrop {
+        background: no-repeat url(images/desktop/image-graphic-design.jpg);
+        background-size: 100% 100%;
+    }
+    .photography__backdrop {
+        background: no-repeat url(images/desktop/image-photography.jpg);
+        background-size: 100% 100%;
+    }
+
+    .backdrop__text {
+        padding: 0;
+        margin: 0 auto 4rem auto;
+        text-align: center;
+        font-size: .9rem;
+    }
+    .desktop__text {
+        padding: 4rem 0;
+        margin: 0 auto;
+    }
+    .client__info--h1 {
+        margin: 2rem auto;
+        padding: 0;
+    }
+
+    .footer__images {
+        grid-template-areas: "milk orng cone cubes";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    
+}
