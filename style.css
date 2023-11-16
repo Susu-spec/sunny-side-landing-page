@@ -17,7 +17,7 @@ body {
     background: no-repeat url(images/mobile/image-header.jpg);
     background-color: hsl(197, 71%, 73%);
     background-size: 100% 100%;
-    padding-bottom: 150px;
+    padding-bottom: 9rem;
 }
 
 .container {
@@ -107,6 +107,10 @@ body {
     display: block;
 }
 
+img {
+    height: 100%;
+}
+
 .column__words, .image {
     flex: 1;
 }
@@ -114,7 +118,6 @@ body {
     text-align: center;
     margin: 0 auto;
     padding: 2rem 0 4rem 0;
-    width: 80%;
 }
 
 .column__text--h1 {
@@ -267,6 +270,10 @@ body {
     padding: 0;
 }
 
+.desktop__image, .desktop__bottles, .desktop__cone, .desktop__cubes, .desktop__orange {
+    display: none;
+}
+
 .orange {
     grid-area: orng;
     margin: 0;
@@ -317,15 +324,31 @@ body {
     justify-content: center;
     column-gap: 2rem;
 }
+.attribution { 
+    font-size: .7rem; 
+    text-align: center; 
+    padding: 1rem 0; 
+    margin: 0; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 @media only screen and (min-width: 600px) {
     .header {
         background: no-repeat url(images/desktop/image-header.jpg);
         background-size: 100% 100%;
+        padding-bottom: 15rem;
     }
     .column, .image__column {
         display: flex;
         flex-direction: row;
+    }
+
+    .desktop__image {
+        display: block;
+        flex: 1;
     }
     
     .reverse {
@@ -333,7 +356,7 @@ body {
     }
     .column__text {
         text-align: left;
-        width: 70%;
+        width: 60%;
     }
     .column__words {
         width: 100%;
@@ -370,6 +393,24 @@ body {
         grid-template-areas: "milk orng cone cubes";
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
     
+    .bottles, .orange, .cone, .cubes, .image {
+        display: none;
+    }
+    .desktop__bottles {
+        display: block;
+        grid-area: milk;
+    }
+    .desktop__orange {
+        display: block;
+        grid-area: orng;
+    }
+    .desktop__cone {
+        display: block;
+        grid-area: cone;
+    }
+    .desktop__cubes {
+        display: block;
+        grid-area: cubes;
+    }
 }
