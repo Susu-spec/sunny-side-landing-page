@@ -15,8 +15,15 @@ nav {
     text-align: center;
     background: white;
     margin: 1rem;
+    padding: 1rem 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: .9rem;
 }
 
+.pos__z {
+    position: relative;
+    z-index: 1;
+}
 
 .header {
     position: relative;
@@ -71,9 +78,16 @@ nav {
 .nav__item {
     padding: .75em;
 }
+
 .nav__link {
     text-decoration: none;
     color: black;
+}
+
+.nav__link:hover {
+    border-radius: 20px;
+    background: hsl(51, 100%, 49%);
+    padding: .4rem;
 }
 
 .hamburger,
@@ -100,13 +114,14 @@ nav {
 .nav {
     visibility: hidden;
     height: 0;
-    position: absolute
+    position: absolute;
 }
 
 .nav--visible {
     visibility: visible;
     height: auto;
     position: relative;
+    z-index: 100;
 }
 
 .row {
@@ -413,6 +428,38 @@ img {
         background: no-repeat url(images/desktop/image-header.jpg);
         background-size: 100% 100%;
         padding-bottom: 16rem;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        position: relative;
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav__list {
+        display: flex;
+        padding-top: .75rem;
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 1rem;
+    }
+
+    .nav__link {
+        color: white;
+    }
+    
+    .nav__link:hover {
+        padding: .6rem;
+        border-radius: 20px;
+        background-color: cyan;
+        text-transform: uppercase;
     }
 
     .arrow svg{
