@@ -10,7 +10,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Links](#links)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -27,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of the Project](images/sunnyside-landing-page-desktop.png)
+![Screenshot of the Project](images/sunny-side-desktop.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://your-solution-url.com)
+- Live Site URL: (https://susu-spec.github.io/sunny-side-landing-page/)
 
 ### Built with
 
@@ -42,6 +41,33 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+### What I learned
+
+```html
+<div class="bottles">
+  <img src="images/mobile/image-gallery-milkbottles.jpg" alt="Picture of bottles of milk">
+</div>
+<div class="desktop__bottles">
+  <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Picture of bottles of milk">
+</div>
+```
+
+```css
+a {
+    cursor: pointer;
+    display: inline-block;
+}
+
+path:hover,
+path:active {
+    fill: white;
+}
+```
+
+### Useful resources
+- [Resource 1](https://css-tricks.com/change-color-of-svg-on-hover/) 
+- [Resource 2](https://stackoverflow.com/questions/4476526/do-i-use-img-object-or-embed-for-svg-files) -I ended up sticking to the classic svg tag but this was helpful to learn anyway.
 
 
 ## Author

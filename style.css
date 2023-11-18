@@ -20,21 +20,14 @@ nav {
     font-size: .9rem;
 }
 
-a, embed {
+a {
     cursor: pointer;
-}
-
-embed {
-    pointer-events: none;
+    display: inline-block;
 }
 
 path:hover,
 path:active {
     fill: white;
-}
-
-embed a {
-    display: inline-block;
 }
 
 .pos__z {
