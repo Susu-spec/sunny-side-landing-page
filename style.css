@@ -45,7 +45,7 @@ path:active {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0;
 }
@@ -53,7 +53,6 @@ path:active {
 .header__top {
     display: flex;
     justify-content: space-between;
-    width: 90%;
     margin: 0 auto;
     padding-top: 1rem;
     position: relative;
@@ -448,7 +447,12 @@ img {
     .header {
         background: no-repeat url(images/desktop/image-header.jpg);
         background-size: 100% 100%;
-        padding-bottom: 16rem;
+        padding-bottom: 20rem;
+    }
+
+    .header__text--two {
+        padding-top: 4rem;
+        font-size: 1.5rem;
     }
 
     .nav__toggle {
@@ -474,7 +478,7 @@ img {
 
     .nav__link {
         color: white;
-        font-size: .8rem;
+        font-size: 1.1rem;
     }
     
     .nav__link:hover,
@@ -489,7 +493,7 @@ img {
     }
 
     .arrow svg{
-        position: static;
+        position: relative;
     }
 
     .arrow {
