@@ -67,7 +67,7 @@ path:active {
 
 ### Useful resources
 - [Resource 1](https://css-tricks.com/change-color-of-svg-on-hover/) - Changing the svg color in its hover state.
-- [Resource 2](https://stackoverflow.com/questions/4476526/do-i-use-img-object-or-embed-for-svg-files) -I ended up sticking to the classic svg tag but this was helpful to learn anyway.
+- [Resource 2](https://stackoverflow.com/questions/4476526/do-i-use-img-object-or-embed-for-svg-files) - I ended up sticking to the classic svg tag but this was helpful to learn anyway.
 
 
 ## Author
