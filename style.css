@@ -91,7 +91,7 @@ path:active {
 
 .nav__item {
     padding: .9rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .nav__link {
@@ -104,7 +104,7 @@ path:active {
     border-radius: 20px;
     background: hsl(51, 100%, 49%);
     padding: .9rem 1.4rem;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: bold;
     font-family: 'Fraunces', sans-serif;
     text-transform: uppercase;
@@ -128,19 +128,34 @@ path:active {
 .hamburger::before {
     transform: translateY(-6px);
 }
+
 .hamburger::after {
     transform: translateY(4px);
 }
+
 .nav {
     visibility: hidden;
     height: 0;
     position: absolute;
 }
 
+.nav--visible::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid white;
+}
+
 .nav--visible {
+    opacity: 1;
     visibility: visible;
     height: auto;
-    position: relative;
+    position: absolute;
+    width: 90%;
+    right: 3px;
+    top: 80px;
     z-index: 100;
 }
 
@@ -261,7 +276,7 @@ img {
 }
 
 .backdrop__container {
-    padding-top: 350px;
+    padding-top: 18.75rem;
 }
 
 .backdrop__text {
@@ -461,8 +476,9 @@ img {
 
     .nav {
         visibility: visible;
-        position: relative;
+        position: static;
         background: none;
+        width: auto;
         margin: 0;
         padding: 0;
     }
@@ -488,8 +504,7 @@ img {
         background: hsl(197, 71%, 73%);
         text-transform: uppercase;
         font-family: 'Fraunces', sans-serif;
-        font-size: .6rem;
-        opacity: .5s;
+        font-size: .9rem;
     }
 
     .arrow svg{

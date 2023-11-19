@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of the Project](images/sunny-side-desktop.png)
+![Screenshot of the Project](images/sunnyside-landing-page.png)
 
 
 ### Links
